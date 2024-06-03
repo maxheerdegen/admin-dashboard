@@ -52,23 +52,36 @@
 
   button {
     background-color: #93c5fd;
+    color: #eff6ff;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+
+  button:hover {
+    opacity: 0.8;
   }
 
   .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
   }
 
   .sidebar {
     grid-row: 1 / 3;
     background-color: #93c5fd;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 2fr 1fr;
+    align-items: start;
     height: 100vh;
   }
 
   .sidebar-header {
-    font-size: 25px;
+    font-size: 30px;
+    margin-right: 50px;
   }
 
   .item {
@@ -83,17 +96,56 @@
   .header {
     grid-column: 2 / 4;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 40px 40px;
     background-color: #eff6ff;
+    gap: 20px;
   }
 
   .header-top, .header-bot {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .searchbar {
+    display: flex;
+    align-items: center;
   }
 
   .notifications {
     display: flex;
+    align-items: center;
+    gap: 10px;
+    text-wrap: nowrap;
+    margin-right: 50px;
+  }
+
+  .user-greetings {
+    display: flex;
+    text-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex: 1;
+  }
+
+  .greetings {
+    font-weight: bold;
+  }
+
+  .user-greetings img {
+    height: 50px;
+  }
+
+  .greetings-name {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .header-btns {
+    display: flex;
+    gap: 30px;
   }
 
   .article {
