@@ -77,7 +77,7 @@
     grid-column: 1 / 2;
     background-color: #93c5fd;
     display: grid;
-    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr;
     align-items: start;
   }
 
@@ -103,8 +103,10 @@
     grid-column: 2 / 4;
     display: grid;
     grid-template-rows: 50px 50px;
+    padding-bottom: 10px;
     background-color: #eff6ff;
     gap: 20px;
+    box-shadow: 2px 2px 4px 1px  rgb(0 0 0 / 10%);
   }
 
   .header-top, .header-bot {
@@ -158,14 +160,8 @@
     background-color: #dbeafe;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
-  }
-
-  .projects {
-    display: grid;
-    grid-template-rows: 1fr 10fr;
-    margin-left: 10px;
   }
 
   .article {
@@ -197,4 +193,46 @@
   .news {
     display: grid;
     grid-template-rows: 1fr 1fr;
+  }
+
+  .projects-title, .announcements-title, .news-title, .card-title, .section-title, .trending-title {
+    font-weight: bold;
+  }
+
+  .projects-title, .announcements-title, .trending-title {
+    margin-bottom: 10px;
+  }
+
+  .section {
+    background-color: #eff6ff;
+    width: 150x;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .sub-section:not(:last-child) {
+    border-bottom: #dbeafe solid 2px;
+    margin-bottom: 20px;
+  }
+
+  .trending .sub-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .trending img {
+    width: 40px;
+  }
+
+  input[type="search"] {
+    appearance: none;
+    width: 500px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #dbeafe;
+    margin-left: 10px;
+    padding: 5px;
+    border: 1px black solid;
   }
